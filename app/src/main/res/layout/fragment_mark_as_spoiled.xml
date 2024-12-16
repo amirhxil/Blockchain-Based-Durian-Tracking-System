@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <!-- Title: "Generate Report" -->
+    <TextView
+        android:id="@+id/titleGenerateReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Durian as Spoiled"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="150dp" />
+
+    <!-- Batch Code Input -->
+    <EditText
+        android:id="@+id/batchCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Durian Batch Code"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Generate Report Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/lightGreen"
+
+        android:id="@+id/generateReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Report Content -->
+    <LinearLayout
+        android:id="@+id/reportContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"> <!-- Initially hidden -->
+
+        <!-- Label and Report Fields -->
+        <TextView
+            android:id="@+id/reportBatchCodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch Code: "
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportBatchCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batch Code Details" />
+
+        <TextView
+            android:id="@+id/reportDurianTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durian Type: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportDurianType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durian Type Details" />
+
+        <TextView
+            android:id="@+id/reportCurrentStateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current State: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportCurrentState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current State Details" />
+
+        <TextView
+            android:id="@+id/reportHarvestDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harvest Date: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportHarvestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harvest Date Details" />
+
+        <TextView
+            android:id="@+id/reportFarmLocationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farm Location: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportFarmLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="370dp"
+            android:text="Farm Location Details" />
+
+        <TextView
+            android:id="@+id/reportDistributorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distributor: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportDistributor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distributor Details" />
+
+        <TextView
+            android:id="@+id/reportRetailerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retailer: "
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reportRetailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retailer Details" />
+    </LinearLayout>
+
+    <!-- Export as PDF Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/lightGreen"
+
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as SPOILED"
+        android:layout_gravity="center"
+        android:padding="10dp"
+
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State for when the item is hovered (API 26+) -->
+    <item android:state_hovered="true" android:drawable="@drawable/hover_color" />
+    <!-- State for when the item is pressed -->
+    <item android:state_pressed="true" android:drawable="@drawable/pressed_color" />
+    <!-- Default state -->
+</selector>

@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingBottom="16dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch Code"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/batchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch Code Value" />
+
+            <ImageView
+                android:id="@+id/copyBatchCodeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/copy_icon"
+                android:contentDescription="Copy to Clipboard"
+                android:clickable="true"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durian Type"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/durianType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durian Type Value" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (Gram)"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/weightInGram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight Value" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durian State"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State Value" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harvest Date"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/harvestDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Value" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farm Location"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/farmLocation"
+                android:layout_width="match_parent"
+                android:maxWidth="200dp"
+                android:layout_height="wrap_content"
+                android:text="Location Value"
+                android:maxLines="5"
+                android:scrollHorizontally="false"
+                android:ellipsize="none" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Owner"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/currentOwner"
+                android:layout_width="match_parent"
+                android:maxWidth="200dp"
+                android:layout_height="wrap_content"
+                android:text="Owner Value"
+                android:maxLines="5"
+                android:scrollHorizontally="false"
+                android:ellipsize="none" />
+
+            <ImageView
+                android:id="@+id/copyCurrentOwnerImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/copy_icon"
+                android:contentDescription="Copy to Clipboard"
+
+                android:clickable="true"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owned Date"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/ownedTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timestamp Value" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distributor Name"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/distributorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distributor Name Value" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrived at Distributor"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/arrivedAtDistributor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distributor Date Value" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retailer Name"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/retailerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retailer Name Value" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrived at Retailer"
+                android:textStyle="bold"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/arrivedAtRetailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retailer Date Value" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/markAsSpoiledButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mark as Spoiled"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </TableLayout>
+</LinearLayout>

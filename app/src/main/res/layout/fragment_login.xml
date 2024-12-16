@@ -1,0 +1,102 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginFragment">
+
+        <!-- Image View at the top -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="228dp"
+            android:layout_height="89dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/durian" />
+
+        <!-- Title Text below Image -->
+        <TextView
+            android:id="@+id/tvLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In to Durian Tracking System"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000" />
+
+        <!-- Input fields container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tvLoginTitle"
+            android:layout_marginTop="40dp"
+            android:padding="16dp">
+
+            <!-- Account Number Label and EditText -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Account Address"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Account Number"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Private Key"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etPrivateKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Private Key"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/ivTogglePrivateKeyVisibility"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_visibility_off"
+                android:contentDescription="Toggle Visibility" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@color/lightGreen"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Durian Tracking System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="user_roles">
+        <item>Unassigned</item>
+        <item>Farmer</item>
+        <item>Distributor</item>
+        <item>Retailer</item>
+        <item>Consumer</item>
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>Oldest to Latest</item>
+        <item>Latest to Oldest</item>
+
+    </string-array>
+
+    <string name="spinner_prompt">Sort</string>
+
+
+</resources>

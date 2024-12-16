@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.fyp_duriantrackingsystem.ui.Login"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_login_to_setupProfileFragment"
+            app:destination="@id/setupProfileFragment" />
+        <action
+            android:id="@+id/action_login_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.example.fyp_duriantrackingsystem.ui.Tryyy"
+        android:label="Transaction" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.fyp_duriantrackingsystem.ui.Profile"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupProfileFragment"
+        android:name="com.example.fyp_duriantrackingsystem.ui.SetupProfile"
+        android:label="Setup Profile">
+        <argument
+            android:name="accountNumber"
+            app:argType="string" />
+        <argument
+            android:name="rpcUrl"
+            app:argType="string" />
+        <argument
+            android:name="privateKey"
+            app:argType="string" />
+        <argument
+            android:name="contractAddress"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_setupProfileFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_setupProfileFragment_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDurian"
+        android:name="com.example.fyp_duriantrackingsystem.ui.AddDurian"
+        android:label="AddDurian">
+        <action
+            android:id="@+id/action_addDurian_self"
+            app:destination="@id/addDurian" />
+    </fragment>
+    <fragment
+        android:id="@+id/durianList"
+        android:name="com.example.fyp_duriantrackingsystem.ui.DurianList"
+        android:label="DurianList" />
+    <fragment
+        android:id="@+id/transferOwnership"
+        android:name="com.example.fyp_duriantrackingsystem.ui.TransferOwnership"
+        android:label="TransferOwnership">
+        <action
+            android:id="@+id/action_transferOwnership_self"
+            app:destination="@id/transferOwnership" />
+    </fragment>
+    <fragment
+        android:id="@+id/durianOwned"
+        android:name="com.example.fyp_duriantrackingsystem.ui.DurianOwned"
+        android:label="DurianOwned" />
+    <fragment
+        android:id="@+id/generateQR"
+        android:name="com.example.fyp_duriantrackingsystem.ui.GenerateQR"
+        android:label="fragment_generate_qr"
+        tools:layout="@layout/fragment_generate_qr" />
+    <fragment
+        android:id="@+id/generateReport"
+        android:name="com.example.fyp_duriantrackingsystem.ui.GenerateReport"
+        android:label="GenerateReport" />
+    <fragment
+        android:id="@+id/userTransaction"
+        android:name="com.example.fyp_duriantrackingsystem.ui.UserTransaction"
+        android:label="UserTransaction">
+        <action
+            android:id="@+id/action_userTransaction_self"
+            app:destination="@id/userTransaction" />
+    </fragment>
+    <fragment
+        android:id="@+id/markAsSpoiled"
+        android:name="com.example.fyp_duriantrackingsystem.ui.MarkAsSpoiled"
+        android:label="fragment_mark_as_spoiled"
+        tools:layout="@layout/fragment_mark_as_spoiled">
+        <action
+            android:id="@+id/action_markAsSpoiled_self"
+            app:destination="@id/markAsSpoiled" />
+    </fragment>
+    <fragment
+        android:id="@+id/mySpoiledDurians"
+        android:name="com.example.fyp_duriantrackingsystem.ui.MySpoiledDurians"
+        android:label="fragment_my_spoiled_durians"
+        tools:layout="@layout/fragment_my_spoiled_durians" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.yourapp.SplashActivity"
+        android:label="SplashActivity" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.fyp_duriantrackingsystem.ui.MainActivity"
+        android:label="MainActivity" />
+
+
+</navigation>

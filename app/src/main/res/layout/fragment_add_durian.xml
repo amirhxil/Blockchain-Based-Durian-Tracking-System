@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <!-- Title: Harvest New Durian -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harvest New Durian"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />  <!-- Adds space below the title -->
+
+    <!-- Batch Code -->
+    <TextView
+        android:id="@+id/batchCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch Code"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/batchCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:focusable="false"
+        android:clickable="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:hint="Generated automatically"
+        android:inputType="none"
+        android:importantForAccessibility="yes" />
+
+    <!-- Durian Type -->
+    <TextView
+        android:id="@+id/durianTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durian Type"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/durianType"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/spinner_border" />
+
+    <!-- Weight in Gram -->
+    <TextView
+        android:id="@+id/weightInGramLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight in Gram"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/weightInGram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:hint="Enter weight in grams"
+        android:textSize="14sp" />
+
+    <!-- Farm Location -->
+    <TextView
+        android:id="@+id/farmLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farm Location"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/farmLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:hint="Enter farm location"
+        android:textSize="14sp" />
+
+    <!-- Add Durian Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addDurianButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightGreen"
+        android:onClick="addDurian"
+        android:text="Add Durian"
+        android:textSize="16sp" />
+
+    <!-- Status Message -->
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+
+        android:paddingTop="8dp" />
+
+</LinearLayout>

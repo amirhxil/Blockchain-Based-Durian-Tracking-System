@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+
+    android:padding="16dp">
+
+    <!-- Title: Transfer Durian Ownership -->
+    <TextView
+        android:id="@+id/transferOwnershipTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer Durian Ownership"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Batch Code Label -->
+    <TextView
+        android:id="@+id/batchCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch Code"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <!-- Batch Code Input -->
+    <EditText
+        android:id="@+id/batchCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:hint="Enter Durian Batch Code"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp" />
+
+    <!-- New Owner Label -->
+    <TextView
+        android:id="@+id/newOwnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Owner Address"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp" />
+
+    <!-- New Owner Input -->
+    <EditText
+        android:id="@+id/newOwnerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Owner Address"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Transfer Ownership Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/lightGreen"
+
+        android:id="@+id/transferOwnershipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Ownership"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp" />
+
+    <!-- Transfer Status -->
+    <TextView
+        android:id="@+id/transferStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

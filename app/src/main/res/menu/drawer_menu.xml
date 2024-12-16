@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Home Section -->
+    <item
+        android:id="@+id/nav_home"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="AUTHORIZED FARMER">
+        <menu>
+
+            <item
+                android:id="@+id/nav_add_durian"
+                android:title="Harvest / Add Durian" />
+
+
+        </menu>
+    </item>
+
+    <!-- Durian Management Section -->
+    <item
+        android:id="@+id/nav_durian_management"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="DURIAN MANAGEMENT">
+        <menu>
+            <item
+                android:id="@+id/nav_durians_list"
+                android:title="Durians List" />
+            <item
+                android:id="@+id/nav_transfer_ownership"
+                android:title="Transfer Ownership" />
+            <item
+                android:id="@+id/nav_durians_owned"
+                android:title="Durians Owned" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav__qr"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="QR CODE">
+        <menu>
+
+            <item
+                android:id="@+id/nav_generate_qr"
+                android:title="Generate QR Code" />
+
+        </menu>
+    </item>
+
+    <!-- Durian Report Section -->
+    <item
+        android:id="@+id/nav_durian_report"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="DURIAN REPORT">
+        <menu>
+            <item
+                android:id="@+id/nav_generate_report"
+                android:title="Generate Durian Report" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_spoiled_durian"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="SPOILED DURIAN">
+        <menu>
+            <item
+                android:id="@+id/nav_mark_as_spoiled"
+                android:title="Mark As Spoiled" />
+            <item
+                android:id="@+id/nav_my_spoiled_durian"
+                android:title="My Spoiled Durians" />
+        </menu>
+    </item>
+    <!-- User Transactions Section -->
+    <item
+        android:id="@+id/nav_user_transactions"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="USER TRANSACTIONS">
+        <menu>
+            <item
+                android:id="@+id/nav_own_transactions"
+                android:title="Own Transactions" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_account"
+        android:titleTextAppearance="@style/NavigationItemTitleBold"
+        android:title="ACCOUNT">
+        <menu>
+            <item
+                android:id="@+id/nav_my_profile"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="LogOut" />
+        </menu>
+    </item>
+</menu>
